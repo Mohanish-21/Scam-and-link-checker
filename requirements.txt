@@ -1,3 +1,5 @@
 
 # This project uses only built-in libraries
-tk
+tkinter(For GUI)
+re 
+urllib.parse 
