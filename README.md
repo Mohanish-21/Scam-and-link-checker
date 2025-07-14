@@ -58,35 +58,30 @@ python scam_checker.py
 
 No external libraries required — runs with default Python libraries.
 
----
-
-##  Project Structure
-
-```
-scam-checker-python/
-│
-├── scam_checker.py        # Main application file
-├── README.md              # Project documentation
-├── requirements.txt       # Python dependencies
-└── LICENSE                # License file
-```
-
----
 
 ## Future Improvements
 
-- Add machine learning–based scam detection
+- Add Ai to make advanced predictions
 - Create a web or mobile version
-- Support for multilingual scam detection
-- Export report to PDF
+- Support for multilingual scam detectin
 
 ---
 
 ##  About the Author
 
-This project was created by a high school student passionate about cybersecurity and computer science. It was built as a social impact project to stop people from becoming victims of phishing/scams.
+This project was created by a high school student passionate about cybersecurity and computer science. It was built as a social impact project to stop people from becoming victims of phishing/scams. 
 
----
+## Related Blog Post
+
+I wrote a detailed blog about how I built this project, including the challenges and lessons I learned.
+
+➡️ [Read it on Medium]( Related Blog Post
+
+I wrote a detailed blog about how I built this project, including the challenges and lessons I learned.
+
+➡️ [Read it on Medium](https://medium.com/@rajanenim/how-i-built-a-scam-message-and-link-checker-tool-using-python-14e1b4ad1fe6)
+)
+
 
 ##  License
 
