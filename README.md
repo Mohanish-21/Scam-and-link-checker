@@ -69,7 +69,7 @@ No external libraries required — runs with default Python libraries.
 
 ##  About the Author
 
-This project was created by a high school student passionate about cybersecurity and computer science. It was built as a social impact project to stop people from becoming victims of phishing/scams. 
+This project was created by a high school student, who learnt python basics from school and Harvard CS50 python free course, passionate about cybersecurity and computer science. It was built as a social impact project to stop people from becoming victims of phishing/scams. 
 
 ## Related Blog Post
 
