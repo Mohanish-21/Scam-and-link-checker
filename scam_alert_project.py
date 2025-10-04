@@ -29,11 +29,11 @@ def detect_scam(text):
 
     # Scoring results
     if score >= 7:
-        return "❌ High Risk: This message or link is likely a scam.", "red", score
+        return " High Risk: This message or link is likely a scam.", "red", score
     elif 4 <= score < 7:
-        return "⚠️ Warning: This may be a scam. Be cautious.", "orange", score
+        return " Warning: This may be a scam. Be cautious.", "orange", score
     else:
-        return "✅ Safe: No strong signs of a scam were detected.", "green", score
+        return " Safe: No strong signs of a scam were detected.", "green", score
 
 # -------------------- BUTTON FUNCTION --------------------
 def analyze_input():
@@ -45,7 +45,7 @@ def analyze_input():
     result, color, score = detect_scam(user_input)
     output_box.config(state='normal')
     output_box.delete("1.0", tk.END)
-    output_box.insert(tk.END, f"🧠 Scam Risk Score: {score}/10\n\n", "header")
+    output_box.insert(tk.END, f" Scam Risk Score: {score}/10\n\n", "header")
     output_box.insert(tk.END, result, "status")
     output_box.tag_config("status", foreground=color, font=("Arial", 13, "bold"))
     output_box.tag_config("header", font=("Arial", 12, "bold"))
@@ -56,7 +56,7 @@ def run_gui():
     global input_box, output_box
 
     window = tk.Tk()
-    window.title("🛡️ Offline Scam Message & Link Checker")
+    window.title(" Offline Scam Message & Link Checker")
     window.geometry("720x560")
     window.config(bg="#e6f2ff")  # Light blue
 
@@ -66,7 +66,7 @@ def run_gui():
     input_box = scrolledtext.ScrolledText(window, width=80, height=6, font=("Arial", 12))
     input_box.pack(padx=10, pady=5)
 
-    tk.Button(window, text="🔍 Analyze", command=analyze_input,
+    tk.Button(window, text=" Analyze", command=analyze_input,
               font=("Arial", 12, "bold"), bg="#4CAF50", fg="white").pack(pady=10)
 
     tk.Label(window, text="Analysis Result:",
@@ -80,4 +80,5 @@ def run_gui():
 
 # -------------------- RUN THE APP --------------------
 if __name__ == "__main__":
+
     run_gui()
